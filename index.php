@@ -53,8 +53,8 @@ $results= $a->getData($query);
                     echo "<tr>";
                     echo "<td>" . $no . "</td>";
                     echo "<td>" . $row['nama'] . "</td>";
-                    echo "<td>" . $row['ttl'] . "</td>";
                     echo "<td>" . $row['alamat'] . "</td>";
+                    echo "<td>" . $row['ttl'] . "</td>";
                     echo "<td>" . $row['jk'] . "</td>";
                     echo "
                         <td>
@@ -192,6 +192,7 @@ $results= $a->getData($query);
         document.getElementById("editAlamat").value = alamat;
         document.getElementById("editTtl").value = ttl;
         document.getElementById("editJk").value = jk;
+
         openModal("modalEdit");
     }
     </script>
